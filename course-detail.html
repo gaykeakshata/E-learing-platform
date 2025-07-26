@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Detail</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Web Development Course</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="video-section">
+      <h2>Introduction Video</h2>
+      <video width="640" controls>
+        <source src="assets/sample-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section class="progress-section">
+      <h3>Your Progress</h3>
+      <progress id="courseProgress" value="40" max="100"></progress>
+      <button onclick="updateProgress()">Mark as Completed</button>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 E-LearnX</footer>
+  <script src="script.js"></script>
+</body>
+</html>
